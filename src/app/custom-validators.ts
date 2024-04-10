@@ -14,7 +14,7 @@ export class CustomValidators {
   ): Promise<any> | Observable<any> {
     const promise = new Promise((resolve) => {
       setTimeout(() => {
-        if (control.value === "Test1") {
+        if (control.value === "Test") {
           resolve({ invalidProjectName: true });
         } else {
           resolve(null);
