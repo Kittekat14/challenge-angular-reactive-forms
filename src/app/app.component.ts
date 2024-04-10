@@ -26,11 +26,9 @@ export class AppComponent implements OnInit {
   }
 
   onSubmit() {
-    // observable which tracks valueChanges and statusChanges which you can subscribe to
-
     console.log(this.projectForm.value);
 
-    // this.projectForm.reset({ projectStatus: "stable" });
+    this.projectForm.reset();
   }
 
   // this is our custom validator method:
